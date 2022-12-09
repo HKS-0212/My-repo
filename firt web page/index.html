@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Gymzilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nobile:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Simonetta:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url("Screenshot\ \(873\)\ \(1\).png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 60%;
+    }                                                       /*Main body css*/
+    .Top{
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10%;
+        height: 60px;
+        margin-top: 1%;
+    }                                                          /*header*/
+    .left{
+        display:inline-block;
+        position: fixed;
+        left: 2px;
+        top: 2%;
+        margin-left: 2.5%;
+        width: 10%;
+        height: 10%;
+    }                                                      /*header div 1*/
+    img{
+        width: 40%;
+    }                                                       /*logo image*/
+    .center{
+        display: inline-block;
+        width: 100%;
+        font-size: large;
+        margin: auto;
+    }                                                      /*header div 2*/
+    .navbar{
+        display: inline-block;
+        width:65%;
+        margin-left: 2%;
+    }                                                     /*header div 2 ul*/
+    .navbar li{
+        display: inline;
+        width: 22%;
+    }                                                    /*header div 2 ul li*/
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        margin-left:11%;
+    }                                                   /*header div 2 ul li a*/
+    .navbar li a:hover{
+        color: rgb(240, 108, 108);
+    }                                                  /*header div 2 ul li a hover*/
+    .slogan{
+        padding-top: 4%;
+        margin:auto;
+        width: 65%;
+        text-align:center;
+        font-size: 250%;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-weight: bold;
+        text-shadow: 5px 7px 15px;
+    }                                                        /*Slogan #home*/
+    .start{
+        margin-bottom: 1%;
+    }                                                    /* Start Popular product*/
+    .Top2{
+        text-align: center;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-size: 400%;
+        padding-top: 2%;
+        text-shadow: 3px 3px 5px;
+    }                                                       /*Start top heading*/
+    .box{
+        width: 70%;
+        margin: auto;
+        margin-top: 5%;
+    }                                                     /*Start popular produt box*/
+    .box p{
+        border-radius: 10px;
+        width: 35%; 
+        margin:3% 3%;
+        padding:5% 4%;
+        display: inline-block;
+        box-shadow: 1px 7px 33px 3px;
+        background-color: rgb(198, 198, 198);
+        text-align: center;
+    }                                                   /*Start popular product content*/
+    .box p:hover{
+        background-color: rgb(129, 129, 129);
+    }                                                  /*Start popular product content hover*/
+    .box p input{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-top:10%;
+        color: rgb(125, 134, 139);
+        background-color: rgb(0, 0, 0);
+        height: 40px;
+    }                                               /*Start popular product content buy now box*/
+    .box p input:hover{
+        background-color: rgb(241, 218, 67);
+    }                                             /*Start popular product content buy now box hover*/
+    .equip{
+        font-size: 150%;
+        font-family: 'Cairo', sans-serif;
+    }                                                  /*Start popular product content name*/
+    .img1{
+        width: 100%;
+        border-radius: 10px;
+    }                                                 /*Start popular product content images*/
+    .explore{
+        text-align: right;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 5%;
+    }                                                           /*explore more div*/
+    .explore p a{
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+    }                                                           /*explore more link*/
+    .explore p a:hover{
+        text-decoration:underline;
+    }                                                           /*explore more hover*/
+    .test{
+        font-family: 'Simonetta', cursive;
+        text-align: center;
+        font-size: xx-large;
+        font-style: bold;
+        padding-bottom: 4%;
+    }                                                        /*heading box of testimonials*/
+    .testimonials{
+        width: 80%;
+        margin: auto;
+    }                                                          /*testimonials main box*/
+    .testimonials p{
+        width: 30%;
+        margin-right: 1%;
+        display: inline-block;
+        box-shadow: 0px 4px 60px 11px;
+        border-radius: 10px;
+        padding: 4% 1%;
+        text-align: center;
+        margin-bottom: 4%;
+        background-color: rgb(229, 229, 229);
+    }                                                           /*testimonials sub box*/
+    .feedback{
+        width: 60%;
+        margin: auto;
+        margin-bottom:6%;
+        background-image: url("image.jpg");
+        padding: 4% 5%;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Simonetta', cursive;
+        color: white;
+    }                                                          /*feedback form main box*/
+    .feed1{
+        padding-top: 5%;
+        font-size: 125%;
+    }                                                      /*how was youe exprience rating*/
+    .feed2{
+        padding-top: 5%;
+        font-size: 125%;
+        padding-bottom: 1%;
+    }                                                               /*sugesion box*/
+    .Sub input{
+        background-color:aliceblue;
+        border-radius: 5px;
+        width: 10%;
+    }                                                          /*submit and reset button*/
+    footer{
+        background-color: black;
+        color: white;
+    }                                                            /*main box of footer*/
+    .back{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        display: block;
+        background-color: rgb(55, 54, 54);
+        padding: 0.5%;
+    }                                                         /*footer back to top button*/
+    .back:hover{
+        color: rgb(194, 194, 194);
+    }                                                      /*footer back to top button hover*/
+    .end{
+        padding: 0.5% 5%;
+        text-align: right;
+        border-top: 1px solid white;
+    }                                                               /*fotter last line*/
+    .f_mid{
+        padding: 1.5% 2%;
+    }                                                               /*footer content*/
+    .f_mid ul{
+        padding-left: 10%;
+        display: inline-block;
+        padding-bottom: 5%;
+    }                                                      /*footer content unorder list format*/
+    .f_mid ul li{
+        list-style: none;
+        padding-bottom: 5%;
+    }                                                           /*footer content list items*/
+    .f_mid ul li a{
+        color: white;
+        text-decoration: none;
+    }                                                          /*footer content dummy links*/
+    .f_mid ul li a:hover{
+        text-decoration: underline;
+    }                                                       /*footer content dummy links hover*/
+    .f_mid p{
+        text-align: right;
+        width: 30%;
+        margin-left: 65%;
+        padding-right: 5%;
+    }                                                              /*footer content box*/
+    </style>
+<body>
+    <header class="Top">
+        <div class="left">
+            <img src="Screenshot (873).png" alt="">
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#home">GYMZILLA</a></li>
+                <li><a href="equipment.html"target="_blank">Equipment</a></li>
+                <li><a href="#test">Accessories</a></li>
+                <li><a href="#feed">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>   
+    <div id="home"class="slogan">
+        <p>"It never gets easier, you just get stronger"</p>
+    </div> 
+    <div class="start">
+        <div class="Top2">      
+            Our Popular Products
+        </div>  
+        <div class="box">
+            <p>
+                <img src="image 7.jpg" alt="" srcset="" class="img1">
+                <span class="equip">PROTEIN POWDER</span>
+                <input type="button" value="Buy Now">
+            </p>
+            <p>
+                <img src="image 8.jpg" alt="" class="img1">
+                <span class="equip">PROTIEN BAR</span>
+                <input type="button" value="Buy Now">
+            </p>
+            <p>
+                <img src="image 9.jpg" alt="" class="img1">
+                <span class="equip">YOGA MAT</span>
+                <input type="button" value="Buy Now">
+            </p>
+            <p>
+                <img src="image 10.jpg" alt="" class="img1" style="width: 82%; height: 372px;">
+                <span class="equip">YOGA BOOK</span>
+                <input type="button" value="Buy Now">
+            </p>
+            <p>
+                <img src="image 11.jpg" alt="" class="img1" style="width: 91%;">
+                <span class="equip">WORKOUT BAG</span>
+                <input type="button" value="Buy Now">
+            </p>
+            <p>
+                <img src="image 3.jpg" alt="" class="img1">
+                <span class="equip">DUMBELL SET</span>
+                <input type="button" value="Buy Now">
+            </p>
+        </div>
+    </div>
+    <div class="explore">
+        <p><a href="#">Explore More</a>. . . . .</p>
+    </div>
+    <div class="test">
+        What Our Customers Says.
+    </div>
+    <div class="testimonials">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A expedita veritatis ducimus quod. Alias deserunt dolores, accusamus soluta suscipit eveniet. Reiciendis, quasi minus! Repudiandae recusandae facilis et ipsam eaque commodi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi velit vitae nemo magnam nihil nostrum nobis voluptatem explicabo. Dicta totam consequatur, natus laudantium a maxime! Nulla, dolor modi, unde reiciendis itaque debitis doloremque
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis hic molestiae earum incidunt totam aut consectetur, unde laboriosam voluptatum cupiditate accusamus, aliquam adipisci natus fugit enim quaerat quos corrupti.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nisi hic porro fugit voluptate quod dolorem cum perspiciatis nesciunt! Iste commodi, velit aperiam deserunt accusantium quibusdam maiores exercitationem a id.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non sequi earum omnis architecto unde, quisquam dolor, expedita, iusto aperiam veniam sint magni soluta sed? Deserunt recusandae quod odio voluptas.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora animi et ipsum praesentium ea accusamus, corporis dolore doloremque. Veniam saepe omnis pariatur quibusdam cupiditate reiciendis quos soluta quo adipisci iste.
+        </p>
+    </div>
+    <div class="feedback">
+        <h1 style="text-align: center;">
+            Customer Feedback Form
+        </h1>
+        <form action="">
+            <p class="feed1">How was your experience?</p>
+            <input type="radio" name="Select" style="margin-left:10%;">Very Good
+            <input type="radio" name="Select" style="margin-left:10%;">Good
+            <input type="radio" name="Select" style="margin-left:10%;">Fair
+            <input type="radio" name="Select" style="margin-left:10%;">Poor
+            <input type="radio" name="Select" style="margin-left:10%;">Very Poor
+            <p class="feed2">
+                Suggestion:
+            </p>
+            <textarea name="" id="" cols="110" rows="10" style="border-radius: 5px; padding-bottom: 2%;">Please Write Here</textarea>
+            <p class="Sub">
+            <input type="button" value="Submit">
+            <input type="reset">
+            </p>
+        </form>
+    </div>
+    <footer>
+        <div>
+            <a href="#home" class="back">Back to Top</a>
+        </div>
+        <div class="f_mid">
+            <ul style="float: left;">
+                <li style="font-size:20px ; padding-bottom: 15%;">About</li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Other Information</a></li>
+            </ul>
+            <ul style="float: left;">
+                <li style="font-size:20px ; padding-bottom: 10%;">Help</li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Cancillation and Return</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <ul>
+                <li style="font-size:20px ; padding-bottom: 15%;">Social</li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            <p>
+                Gymzilla Iternet Private Limited, Buildings Alyssa, Begonia & Clove Embassy Village, Ring Road, Bengaluru, 560103, Karnataka, India.
+            </p>
+        </div>
+        <div class="end">
+            <p>&copy; Gymzilla.com 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
